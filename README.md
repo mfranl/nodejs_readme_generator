@@ -64,4 +64,4 @@ _weather dashboard mobile aspect ratio_
 
 ## License
 
-[GNU GPLv3](./license)
+[GNU GPLv3](https://github.com/natemking/readme_generator_node/blob/main/LICENSE)
