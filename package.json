@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/natemking/readme_generator_node/issues"
   },
-  "homepage": "https://github.com/natemking/readme_generator_node#readme"
+  "homepage": "https://github.com/natemking/readme_generator_node#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
 }
