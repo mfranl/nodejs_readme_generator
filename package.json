@@ -1,0 +1,19 @@
+{
+  "name": "readme_generator_node",
+  "version": "1.0.0",
+  "description": "Automated README.md generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natemking/readme_generator_node.git"
+  },
+  "author": "Nate M King",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/natemking/readme_generator_node/issues"
+  },
+  "homepage": "https://github.com/natemking/readme_generator_node#readme"
+}
