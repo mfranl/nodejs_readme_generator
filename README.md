@@ -1,5 +1,9 @@
-# README Generator
+# README Generator 
 Homework #09 - Node.JS: Professional README Generator
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/natemking/readme_generator_node/blob/main/LICENSE)
+
+
 
 ---
 
@@ -45,7 +49,7 @@ _weather dashboard mobile aspect ratio_
 
 ## Credits
 
-<!-- * [jQuery](https://jquery.com/)
+<!-- * [shields.io badges for licenses](https://shields.io/category/license)
 
 * [GeoCod API from Nominatim](https://nominatim.org/)
 
