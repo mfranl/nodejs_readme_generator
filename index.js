@@ -1,7 +1,8 @@
 'use strict';
 const fs = require('fs');
 const inquirer = require('inquirer');
-
+const generateMarkdown = require('./utils/generateMarkdown.js');
+const generate = require('./utils/generateMarkdown.js')
 
 
 console.log('Lets generate a readme!')
@@ -101,6 +102,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+
     fs.writeFile(fileName, data, (err) =>
         err ? console.error(err) : console.log('README generated')
     );
@@ -108,9 +110,12 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-    inquirer.prompt(questions).then((answers) => {
-        // console.log(JSON.stringify(answers, null, '  '));
-        writeToFile('./output/README.md', JSON.stringify(answers))
+    inquirer.prompt(questions).then((data) => {
+        console.log(data)
+        
+        writeToFile('./output/README.md', generateMarkdown(data));
+        // console.log(JSON.stringify(data, null, '  '));
+        // writeToFile('./output/README.md', JSON.stringify(data))
       });
       
 }
