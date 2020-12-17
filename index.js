@@ -2,7 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-const generate = require('./utils/generateMarkdown.js')
+
 
 
 console.log('Lets generate a readme!')
@@ -48,7 +48,7 @@ const questions = [
     {
         type: 'input',
         name: 'installNotes',
-        message: `Please add your installation notes.`,
+        message: `Please add your installation notes`,
         when: function (answers) {
             return answers.install;
           }
@@ -61,7 +61,7 @@ const questions = [
     {
         type: 'input',
         name: 'usageInfo',
-        message: `Please add your usage info.`,
+        message: `Please add your usage info`,
         when: function (answers) {
             return answers.usage;
           }
@@ -74,7 +74,7 @@ const questions = [
     {
         type: 'input',
         name: 'contribNotes',
-        message: `Please add your what you want the user to know about contributing to the repo.`,
+        message: `Please add your what you want the user to know about contributing to the repo`,
         when: function (answers) {
             return answers.contrib;
           }
@@ -87,16 +87,29 @@ const questions = [
     {
         type: 'input',
         name: 'testNotes',
-        message: `Please add your instructions for running tests.`,
+        message: `Please add your instructions for running tests`,
         when: function (answers) {
-            return answers.contrib;
+            return answers.test;
+          }
+    },
+    {
+        type: 'confirm',
+        name: 'credits',
+        message: `Would you like to add any credits to the repo?`,
+    },
+    {
+        type: 'input',
+        name: 'creditInfo',
+        message: `Please add your credits`,
+        when: function (answers) {
+            return answers.credits;
           }
     },
     {
         type: 'rawlist',
         name: 'license',
         message: 'Which open source license would you like to use? ',
-        choices: ['Apache 2.0', 'BSD 2-Clause', 'BSD 3-CLause', 'GNU AGPLv3.0', 'GNU GPLv2.0', 'GNU GPLv3.0', 'MIT', 'Mozilla Public 2.0'],
+        choices: ['Apache 2.0', 'BSD 2-Clause', 'BSD 3-Clause', 'GNU AGPLv3.0', 'GNU GPLv2.0', 'GNU GPLv3.0', 'MIT', 'Mozilla Public 2.0'],
     },
 ];
 
@@ -112,10 +125,8 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((data) => {
         console.log(data)
-        
+
         writeToFile('./output/README.md', generateMarkdown(data));
-        // console.log(JSON.stringify(data, null, '  '));
-        // writeToFile('./output/README.md', JSON.stringify(data))
       });
       
 }
