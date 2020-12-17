@@ -1,0 +1,1 @@
+{"title":"fsad","github":"fdsa","email":"dfsa@fsda.com","description":"fdsa","install":true,"installNotes":"dfsa","usage":true,"usageInfo":"dfsa","contrib":false,"test":false,"license":"GNU AGPLv3.0"}

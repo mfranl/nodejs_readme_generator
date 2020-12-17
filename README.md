@@ -49,9 +49,9 @@ _weather dashboard mobile aspect ratio_
 
 ## Credits
 
-<!-- * [shields.io badges for licenses](https://shields.io/category/license)
+<!-- * [Badges for licenses](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
-* [GeoCod API from Nominatim](https://nominatim.org/)
+* [Regex to validate email address](https://sigparser.com/developers/email-parsing/regex-validate-email-address/)
 
 * [Weather API from OpenWeatherMap](https://openweathermap.org/)
 
