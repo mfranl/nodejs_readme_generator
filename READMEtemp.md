@@ -20,15 +20,15 @@
 
 ## Usage
 
-## Credits
-
-## License
-
 ## Contributing
 
 ## Tests
+
+## License
 
 ## Questions
 
 If you have any additional questions please email me @ email@email.com
 GitHub: https://github.com/github user name
+
+## Credits
