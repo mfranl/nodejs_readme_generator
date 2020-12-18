@@ -85,10 +85,10 @@ function generateMarkdown(data) {
 
   //Add credits heading and credits per users input
   if (data.credits){
-    readmeTemplate += `\n## Credits\n${data.creditData}\n`;
+    readmeTemplate += `\n## Credits\n* ${data.creditData}\n`;
     if (data.moreCredits != []){
       for(const value of data.moreCredits){
-          readmeTemplate += `${value.moreCreditData}\n`;
+          readmeTemplate += `\n* ${value.moreCreditData}\n`;
       }
     }
   }
@@ -96,9 +96,8 @@ function generateMarkdown(data) {
   //Add questions section
   readmeTemplate +=  `\n## Questions\n*For any additional information find me at* \n\nGitHub: [@${data.github}](https://github.com/${data.github}/)\n\nEmail: [${data.email}](mailto:${data.email})\n`;
 
-  return readmeTemplate
-
-    
+  
+  return readmeTemplate  
   
 }//End of generateMarkDown
   

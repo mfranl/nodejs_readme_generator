@@ -113,6 +113,7 @@ const questions = [
     },
     {
         type: 'recursive',
+        prefix: '\b',
         name: 'moreCredits',
         message: `Would you like to add more credits to the repo?`,
         when: function (answers) {

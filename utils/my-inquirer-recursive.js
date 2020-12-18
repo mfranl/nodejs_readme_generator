@@ -1,3 +1,7 @@
+/*** The following code was for recursive prompts was written bt GitHub user @ThorHelms and found @ https://github.com/nathanloisel/inquirer-recursive/issues/1#issuecomment-456701056 ***/
+//---------------------------//
+//--------------------------//
+
 var _ = require("lodash");
 var util = require("util");
 var inquirer = require("inquirer");
@@ -43,7 +47,7 @@ class RecursivePrompt extends Base {
     // Render a random character as a 'hack'/bugfix
     // If screen.render() isn't called, each line is displayed twice.
     // If nothing is rendered, an empty line will be displayed.
-    this.screen.render(" ");
+    this.screen.render('\b');
   }
 }
 
