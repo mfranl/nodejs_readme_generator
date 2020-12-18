@@ -1,20 +1,33 @@
-const { timeStamp } = require('console');
-const fs = require('fs');
-const inquirer = require('inquirer');
+var inquirer = require('inquirer');
+inquirer.registerPrompt('recursive', require('inquirer-recursive'));
 
-inquirer.registerPrompt('confirm-validated', require('inquirer-confirm-validated'));
-
-inquirer.prompt(
-{
-  name: 'test',
-  message: 'fuck me?',
-  type: 'confirm-validated',
-  validate: function (answers) {  
-    if (answers === 'y'){
-      console.log('sup')
+var userQuestions = [
+    {
+        type: 'input',
+        name: 'name',
+        message: 'What is user\'s name?',
+        validate: function (value) {
+            if ((/.+/).test(value)) { return true; }
+            return 'name is required';
+        }
+    }, 
+    {
+        type: 'input',
+        name: 'age',
+        message: 'How old is he?',
+        validate: function (value) {
+            var digitsOnly = /\d+/;
+            if (digitsOnly.test(value)) { return true; }
+            return 'Invalid age! Must be a number genius!';
+        }
     }
-    console.log(answers.test);
-   
-  },
+];
 
+inquirer.prompt([{
+    type: 'recursive',
+    message: 'Add a new user ?',
+    name: 'users',
+    prompts: userQuestions
+}]).then(function(answers) {
+    console.log(answers.users);
 });

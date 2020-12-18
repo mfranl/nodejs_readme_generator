@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/natemking/readme_generator_node#readme",
   "dependencies": {
-    "inquirer": "^7.3.3",
-    "inquirer-confirm-validated": "^1.0.0"
+    "inquirer": "^7.3.3"
   }
 }

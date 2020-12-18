@@ -48,7 +48,10 @@ _weather dashboard mobile aspect ratio_
 
 ## Credits
 
-<!-- * [Badges for licenses](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
+<!-- 
+* [Inquirer NPM Module](https://www.npmjs.com/package/inquirer)
+
+* [Badges for licenses](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
 * [Regex to validate email address](https://sigparser.com/developers/email-parsing/regex-validate-email-address/)
 
@@ -58,9 +61,9 @@ _weather dashboard mobile aspect ratio_
 
 * [Get input field to accept only numbers](https://stackoverflow.com/questions/19508183/how-to-force-input-to-only-allow-alpha-letters)
 
-* [Converting from unix time](https://www.codegrepper.com/code-examples/delphi/jquery+convert+unix+timestamp+to+date)
+* [Inquirer-recursive plug-in](https://www.npmjs.com/package/inquirer-recursive)
 
-* [Check if obj has key in an if/else statement](https://stackoverflow.com/questions/455338/how-do-i-check-if-an-object-has-a-key-in-javascript) -->
+* [Code for custom recursive prompt functionality](https://github.com/nathanloisel/inquirer-recursive/issues/1#issuecomment-456701056) -->
 
 
 ---

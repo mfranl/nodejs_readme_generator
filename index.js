@@ -1,8 +1,8 @@
 'use strict';
 const fs = require('fs');
 const inquirer = require('inquirer');
+inquirer.registerPrompt('recursive', require('./utils/my-inquirer-recursive.js'));
 const generateMarkdown = require('./utils/generateMarkdown.js');
-
 
 
 console.log('Lets generate a readme!')
@@ -36,7 +36,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: `Please write a description of your project.`,
+        message: `Please write a description of your project`,
         
     },
     {
@@ -93,29 +93,43 @@ const questions = [
           }
     },
     {
+        type: 'rawlist',
+        name: 'license',
+        message: 'Which open source license would you like to use? ',
+        choices: ['Apache 2.0', 'BSD 2-Clause', 'BSD 3-Clause', 'GNU AGPLv3.0', 'GNU GPLv2.0', 'GNU GPLv3.0', 'MIT', 'Mozilla Public 2.0'],
+    },
+    {
         type: 'confirm',
         name: 'credits',
         message: `Would you like to add any credits to the repo?`,
     },
     {
         type: 'input',
-        name: 'creditInfo',
+        name: 'creditData',
         message: `Please add your credits`,
         when: function (answers) {
             return answers.credits;
           }
     },
     {
-        type: 'rawlist',
-        name: 'license',
-        message: 'Which open source license would you like to use? ',
-        choices: ['Apache 2.0', 'BSD 2-Clause', 'BSD 3-Clause', 'GNU AGPLv3.0', 'GNU GPLv2.0', 'GNU GPLv3.0', 'MIT', 'Mozilla Public 2.0'],
+        type: 'recursive',
+        name: 'moreCredits',
+        message: `Would you like to add more credits to the repo?`,
+        when: function (answers) {
+            return answers.creditData;
+          },
+        prompts: [
+            {
+                type: 'input',
+                name: 'moreCreditData',
+                message: 'Please add your credits',
+            }, 
+        ]
     },
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
-
     fs.writeFile(fileName, data, (err) =>
         err ? console.error(err) : console.log('README generated')
     );
@@ -125,7 +139,6 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((data) => {
         console.log(data)
-
         writeToFile('./output/README.md', generateMarkdown(data));
       });
       
@@ -133,4 +146,5 @@ function init() {
 
 // function call to initialize program
 init();
+
 
