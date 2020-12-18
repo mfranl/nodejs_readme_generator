@@ -3,8 +3,6 @@ Homework #09 - Node.JS: Professional README Generator
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/natemking/readme_generator_node/blob/main/LICENSE)
 
-
-
 ---
 
 ## Table of Contents
@@ -16,16 +14,12 @@ Homework #09 - Node.JS: Professional README Generator
   * [Credits](#credits)
 
 ## Description
----
-### Scope of Work
 
+### Scope of Work
 
 ### HTML and CSS
 
-
 ### Node.js Functionality
-
----
 
 ## Screenshots
 
@@ -42,9 +36,6 @@ _weather dashboard functionality_
 <br>
 _weather dashboard mobile aspect ratio_
 <br> -->
-
-
----
 
 ## Credits
 

@@ -1,5 +1,5 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
+const generateMarkdown = (data) => {
 
   //License badge handling
   switch (data.license) {
@@ -33,12 +33,12 @@ function generateMarkdown(data) {
 
   //Generate table of contents
   let tOC = `\n## Table of Contents\n`
-  if (data.install){tOC += `* [Installation](#installation)\n`;}
-  if (data.usage){tOC += `* [Usage](#usage)\n`;}
-  if (data.contrib){tOC += `* [Contributing](#contributing)\n`;}
-  if (data.test){tOC += `* [Tests](#tests)\n`;}
+  if (data.install) { tOC += `* [Installation](#installation)\n`; }
+  if (data.usage) { tOC += `* [Usage](#usage)\n`; }
+  if (data.contrib) { tOC += `* [Contributing](#contributing)\n`; }
+  if (data.test) { tOC += `* [Tests](#tests)\n`; }
   tOC += `* [License](#license)\n`;
-  if (data.credits){tOC += `* [Credits](#credits)\n`;}
+  if (data.credits) { tOC += `* [Credits](#credits)\n`; }
   tOC += `* [Questions](#questions)\n`;
 
   //Get date for the license copyright
@@ -47,36 +47,35 @@ function generateMarkdown(data) {
   /*** README.md Generation ***/
   //--------------------------//
 
-  
   //Add the README title
   let readmeTemplate = `# ${data.title}\n`;
 
-  //Add license badge
-  readmeTemplate += `\n${licenseBadge}\n`;
+  //Add license badge and hard line
+  readmeTemplate += `\n${licenseBadge}\n\n---\n`;
 
   //Add the description heading and description
   readmeTemplate += `\n## Description\n${data.description}\n`;
 
   //Add table of contents per the users input
   readmeTemplate += tOC;
-  
+
   //Add installation heading and notes per users input
-  if (data.install){
+  if (data.install) {
     readmeTemplate += `\n## Installation\n${data.installNotes}\n`;
   }
 
   //Add usage heading and notes per users input
-  if (data.usage){
+  if (data.usage) {
     readmeTemplate += `\n## Usage\n${data.usageInfo}\n`;
   }
 
   //Add contributing heading and contribution guidelines per users input
-  if (data.contrib){
+  if (data.contrib) {
     readmeTemplate += `\n## Contributing\n${data.contribNotes}\n`;
   }
 
   //Add usage heading and notes per users input
-  if (data.test){
+  if (data.test) {
     readmeTemplate += `\n## Tests\n${data.testNotes}\n`;
   }
 
@@ -84,22 +83,21 @@ function generateMarkdown(data) {
   readmeTemplate += `\n## License \nLicensed under the ${data.license} License. Copyright \u00A9 ${year.getFullYear()}\n`;
 
   //Add credits heading and credits per users input
-  if (data.credits){
+  if (data.credits) {
     readmeTemplate += `\n## Credits\n* ${data.creditData}\n`;
-    if (data.moreCredits != []){
-      for(const value of data.moreCredits){
-          readmeTemplate += `\n* ${value.moreCreditData}\n`;
+    if (data.moreCredits != []) {
+      for (const value of data.moreCredits) {
+        readmeTemplate += `\n* ${value.moreCreditData}\n`;
       }
     }
   }
 
   //Add questions section
-  readmeTemplate +=  `\n## Questions\n*For any additional information find me at* \n\nGitHub: [@${data.github}](https://github.com/${data.github}/)\n\nEmail: [${data.email}](mailto:${data.email})\n`;
+  readmeTemplate += `\n## Questions\n*For any additional information find me at* \n\nGitHub: [@${data.github}](https://github.com/${data.github}/)\n\nEmail: [${data.email}](mailto:${data.email})\n`;
 
   
-  return readmeTemplate  
-  
+  return readmeTemplate;
+
 }//End of generateMarkDown
-  
-  module.exports = generateMarkdown;
-  
+
+module.exports = generateMarkdown;

@@ -1,28 +1,46 @@
-# fdsa
+# Super Awesome App
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+
+---
 
 ## Description
-
+The coolest app **EVAAAARR**
 
 ## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
 * [License](#license)
 * [Credits](#credits)
 * [Questions](#questions)
 
+## Installation
+Run install.exe
+
+## Usage
+Use the *FORCE*
+
+## Contributing
+Sharing is caring
+
+## Tests
+Testing testing 1 2 3????
+
 ## License 
-Licensed under the Apache 2.0 License. Copyright © 2020
+Licensed under the GNU GPLv2.0 License. Copyright © 2020
 
 ## Credits
-* Thing 1
+* [Stack Overflow](https://www.stackoverflow.com)
 
-* Credit 2
+* Thanks Bob!!
 
-* Credit 3
+* [Reddit](https://www.reddit.com)
 
 ## Questions
 *For any additional information find me at* 
 
-GitHub: [@fdsa](https://github.com/fdsa/)
+GitHub: [@natemking](https://github.com/natemking/)
 
-Email: [fsda@fsda.com](mailto:fsda@fsda.com)
+Email: [natemking@gmail.com](mailto:natemking@gmail.com)
