@@ -48,7 +48,7 @@ _README Generator Demo_
 
 ## License
 
-Licensed under the GNU GPLv3.0n License. Copyright © 2020
+Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 ## Credits
 
