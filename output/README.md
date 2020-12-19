@@ -1,42 +1,46 @@
-# The Rad App-le
+# Super Awesome App
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 ---
 
 ## Description
-The raddest app ever!!
+The coolest app **EVAAAARR**
 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
+* [Tests](#tests)
 * [License](#license)
 * [Credits](#credits)
 * [Questions](#questions)
 
 ## Installation
-Install.exe
+Run Install.exe
 
 ## Usage
-Use the force!
+Use the *FORCE*
 
 ## Contributing
-Sharing is caring!
+Sharing is caring
+
+## Tests
+Testing testing 1 2 3????
 
 ## License 
-Licensed under the MIT License. Copyright © 2020
+Licensed under the GNU GPLv2.0 License. Copyright © 2020
 
 ## Credits
-* Thanks Mom!
+* [Stack Overflow](https://www.stackoverflow.com)
 
-* [Stack OverFlow](https://www.stackoverflow.com)
+* Thanks Bob!!
 
-* Thanks Bob!
+* [Reddit](https://www.reddit.com)
 
 ## Questions
 *For any additional information find me at* 
 
 GitHub: [@natemking](https://github.com/natemking/)
 
-Email: [natemking@gmail.com](mailto:natemking@gmail.com)
+Email: [natmeking@gmail.com](mailto:natmeking@gmail.com)
