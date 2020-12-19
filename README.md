@@ -24,7 +24,7 @@ The generator was written in Node.js utilizing mostly the Inquirer module for a 
 
 The app starts with the user being given a welcome message. This is an array of one inquirer confirm object. I wanted to present the user with a bit of a greeting before throwing them right into the meat of the app. Once the user is ready and hits 'y', I have a console log display a very small syntactical cheat sheet just in case the user wants to add some flair, links, or images as they generate the README. 
 
-Next, the user is walked through a set of questions that requires their input. The sections title, table of contents, description, license, & questions are required. In the remaining sections, the user is given the choice if they would like to like to add each section. If they select yes the next question asks for them to input their data. If they choose no a confirm for the next section appears and the section they are not including does not appears in the table of contents. 
+Next, the user is walked through a set of questions that requires their input. I utilized regex to use validate to make sure the use puts in a valid email. The sections title, table of contents, description, license, & questions are required. In the remaining sections, the user is given the choice if they would like to like to add each section. If they select yes the next question asks for them to input their data. If they choose no a confirm for the next section appears and the section they are not including does not appears in the table of contents. 
 
 Once the majority of the section selections are completed the user is presented with the license options. They can choose from eight of the most popular open-source licenses. After choosing a license a the respective license badge will be at the top of the README and a license section with text stating what license was chosen will be created. There is also a copyright added with a year. That year is brought in via `newDate()` to not have the date hardcoded for future use of the app. 
 
@@ -32,7 +32,7 @@ Lastly, the user is prompted with adding a credits section. This section was the
 
 The instructions to generate the README are a custom module as well. I would like to take credit for this but I cannot as that framework was set up in the assignment when given to me. I did, however, write all the necessary code to take in the user input data and add it to the `generateMarkdown()` function to create the file. 
 
-Lastly, I used an async/await function to handle the promises and then finally generate the README. 
+Lastly, I used an async/await function to handle the promises and then finally generate the README which is written to the './output/' folder in the repo.
 
 
 
