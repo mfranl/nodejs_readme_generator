@@ -3,7 +3,7 @@ Homework #09 - Node.JS: Professional README Generator
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/natemking/readme_generator_node/blob/main/LICENSE)
 
-<img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
+![node.js badge](https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white)
 
 
 [App Demo Video](https://youtu.be/ukyjAsLClYU)
