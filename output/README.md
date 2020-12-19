@@ -1,42 +1,38 @@
-# Super Awesome App
+# The Rad App-le
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
 ## Description
-The coolest app **EVAAAARR**
+The raddest app ever!!
 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
-* [Tests](#tests)
 * [License](#license)
 * [Credits](#credits)
 * [Questions](#questions)
 
 ## Installation
-Run install.exe
+Install.exe
 
 ## Usage
-Use the *FORCE*
+Use the force!
 
 ## Contributing
-Sharing is caring
-
-## Tests
-Testing testing 1 2 3????
+Sharing is caring!
 
 ## License 
-Licensed under the GNU GPLv2.0 License. Copyright © 2020
+Licensed under the MIT License. Copyright © 2020
 
 ## Credits
-* [Stack Overflow](https://www.stackoverflow.com)
+* Thanks Mom!
 
-* Thanks Bob!!
+* [Stack OverFlow](https://www.stackoverflow.com)
 
-* [Reddit](https://www.reddit.com)
+* Thanks Bob!
 
 ## Questions
 *For any additional information find me at* 
