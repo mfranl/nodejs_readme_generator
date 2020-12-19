@@ -38,10 +38,6 @@ Lastly, I used an async/await function to handle the promises and then finally g
 
 ## Screenshots
 
-<summary><strong>Demo GIF</strong></summary>
-<br>
-
-
 ![README generator demo](./assets/images/screenshots/node_js_readme_generator.gif)
 <br>
 _README Generator Demo_
