@@ -13,7 +13,7 @@ Homework #09 - Node.JS: Professional README Generator
 ## Table of Contents
  * [Description](#description)
     + [Scope of Work](#scope-of-work)
-    + [Node.js functionality](#node.js-functionality)
+    + [Node.js functionality](#nodejs-functionality)
   * [Screenshots](#screenshots)
   * [License](#license)
   * [Credits](#credits)
