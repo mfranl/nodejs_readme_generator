@@ -71,3 +71,7 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 ---
 
+GitHub: [@natemking](https://github.com/natemking/)
+
+Email: [natmeking@gmail.com](mailto:natmeking@gmail.com)
+
